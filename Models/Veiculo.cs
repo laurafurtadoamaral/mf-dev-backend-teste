@@ -21,5 +21,7 @@ namespace mf_dev_backend.Models
 
         [Required(ErrorMessage = "O campo Ano do Modelo é obrigatório")]
         public int AnoModelo     { get; set; }
-}
+
+        public ICollection<Consumo> Consumos { get; set; }
+    }
 }
